@@ -1,0 +1,20 @@
+.dateComponent{
+    display:flex;
+    justify-content: center;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+}
+.date{
+    display: flex;    
+    font-family: seven segment;
+    font-size: 6rem;
+    color: aqua;
+    text-shadow: 20px, 20px, 5px yellow;
+    height: 5rem;
+    align-items: center;
+    display: flex;
+}
+.time{
+    display:inline-block;
+}

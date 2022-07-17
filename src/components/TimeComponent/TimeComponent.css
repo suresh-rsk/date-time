@@ -1,0 +1,97 @@
+.timeComponent{
+    display: inline-block;
+    margin-top: 5rem;
+}
+
+.clock{
+    display: flex;    
+    justify-content: center;
+    font-family: seven segment;
+    font-size: 6rem;
+    text-align: center;
+    color: aqua;
+    text-shadow: 20px, 20px, 5px yellow;
+    width: 20rem;
+    height: 5rem;
+    align-items: center;
+
+}
+.timeFormat{
+    display: flex;
+    height: 5rem;
+}
+.timeM{
+    height: 100%;
+    display: block;
+    margin-left: 0.5rem;
+}
+.labels, .selection{
+    right: 0px;
+    height: 1rem;
+    margin: 0;
+    padding: 2px;
+    margin-top: 0.3rem;
+    border-radius: 3px;
+}
+.labels{
+    background-color: rgb(78, 76, 76);
+    color: rgb(54, 52, 52);
+}
+
+.selection{
+    background-color:#fff;
+    color: #000000;
+}
+
+.timeControl{
+    width: 20rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.toggleInfo{
+    display: block;
+}
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	width: 2em;
+	height: 1rem;
+	background: grey;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 15px;
+	height: 15px;
+	background: #fff;
+	border-radius: 15px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: #bada55;
+}
+
+input:checked + label:after {
+	left: 100% ;
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 2rem;
+}
+
+
